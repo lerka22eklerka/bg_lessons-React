@@ -2,12 +2,13 @@ import { Button } from 'components/Button/Button';
 // Импортируем хук
 import { useDispatch } from "react-redux";
 // Импортируем генератор экшена
-import { addTask } from "../../redux/actions";
+// import { addTask } from "../../redux/actions";
+import { addTask } from 'redux/tasksSlice';
 import css from './TaskForm.module.css';
 
 export const TaskForm = () => {
   const dispatch = useDispatch();
-  
+
   const handleSubmit = event => {
     event.preventDefault();
     const form = event.target;
